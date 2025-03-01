@@ -10,8 +10,7 @@
 </body>
 </html>
 <BODYnbackground="flower.gif">
-<H2> 我的世界java 1.12.2服务器是公益免费的 </H2>
-<p>我的世界官网:minecraftyy.wordpress.com </p>
-<p>QQ群号:747086715 服务器IP:node3.yunmc.vip:20219 </p>
+<H2> 我的世界java服务器是公益免费的 </H2> 
+<p>QQ群号:747086715 服务器IP:hmfree.tooo.top:20219 </p>
 <p>需要赞助的加QQ:875752110 </p>
 </BODY>
