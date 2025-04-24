@@ -12,9 +12,6 @@
             background-color: #e9e9e9; /* 修改背景颜色为浅灰色 */
             text-align: center;
         }
-        h1 {
-            color: #333;
-        }
         .container {
             max-width: 600px;
             margin: 50px auto;
@@ -27,6 +24,7 @@
         }
         .header h1 {
             font-size: 2.5em;
+            color: #333;
         }
         .header p {
             font-size: 1.2em;
@@ -37,6 +35,7 @@
         }
         .content h2 {
             color: #007BFF;
+            font-size: 1.8em;
         }
         .content p {
             font-size: 1.1em;
