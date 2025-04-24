@@ -47,6 +47,18 @@
         .contact p {
             margin: 5px 0;
         }
+        .join-group {
+            margin-top: 20px;
+        }
+        .join-group a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +73,9 @@
         </div>
         <div class="contact">
             <p>作者：cn带土</p>
+            <div class="join-group">
+                <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=kDSvEasRpLjg7wSHEHvuu6SnjsE8xV7X&authKey=QRT9%2BXkFgQ2EPvmrGzxU05OwTSQRziZB7AVAsZwOXNupblADOkpI6COMSeAWQQVg&noverify=0&group_code=747086715" target="_blank">点击链接加入群聊【EmpireCraft服务器】</a>
+            </div>
             <p>QQ群号：747086715</p>
             <p>需要赞助的加QQ：875752110</p>
         </div>
