@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -7,79 +6,114 @@
     <title>EmpireCraft服务器</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #e9e9e9; /* 修改背景颜色为浅灰色 */
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('background.jpg'); /* 背景图片 */
+            background-size: cover;
+            background-position: center;
         }
         .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background-color: #fff; /* 容器背景颜色为白色 */
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
         }
-        .header {
-            margin-bottom: 20px;
+        h1 {
+            color: #4CAF50;
         }
-        .header h1 {
-            font-size: 2.5em;
-            color: #333;
-        }
-        .header p {
-            font-size: 1.2em;
-            color: #666;
-        }
-        .content {
-            margin-bottom: 20px;
-        }
-        .content h2 {
-            color: #007BFF;
-            font-size: 1.8em;
-        }
-        .content p {
-            font-size: 1.1em;
-            color: #333;
-        }
-        .contact {
-            font-size: 1.2em;
-        }
-        .contact p {
-            margin: 5px 0;
-        }
-        .join-group {
-            margin-top: 20px;
-        }
-        .join-group a {
+        .button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #007BFF;
-            color: #fff;
+            margin: 10px 0;
+            background-color: #4CAF50;
+            color: white;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .contact {
+            margin-top: 20px;
+        }
+        .robot {
+            width: 100px;
+            height: 150px;
+            background-color: #4CAF50;
+            border-radius: 50px;
+            margin: 20px auto;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            animation: blink 2s infinite;
+        }
+        .robot::before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 20px;
+            background-color: white;
+            border-radius: 20px;
+            top: 60px;
+            left: 30px;
+        }
+        .robot::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            top: 90px;
+            left: 40px;
+        }
+        .robot:hover {
+            transform: translateY(-5px);
+            background-color: #45a049;
+        }
+        @keyframes blink {
+            0%, 100% {
+                transform: scaleY(1);
+            }
+            50% {
+                transform: scaleY(0.8);
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>EmpireCraft服务器</h1>
-            <p>cn带土制作的一个简单的网页</p>
-        </div>
-        <div class="content">
-            <h2>欢迎加入EmpireCraft服务器</h2>
-            <p>这是一个公益免费的服务器，欢迎加入！</p>
-        </div>
+        <h1>EmpireCraft服务器</h1>
+        <p>cn带土制作的一个简单的网页</p>
+        <h2>欢迎加入EmpireCraft服务器</h2>
+        <p>这是一个公益免费的服务器，欢迎加入！</p>
+        <p>作者：cn带土</p>
+        <a href="https://qm.qq.com/cgi-bin/qm/qr?k=XXXXXXX" class="button" id="joinQQGroup">点击加入QQ群聊</a>
         <div class="contact">
-            <p>作者：cn带土</p>
-            <div class="join-group">
-                <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=kDSvEasRpLjg7wSHEHvuu6SnjsE8xV7X&authKey=QRT9%2BXkFgQ2EPvmrGzxU05OwTSQRziZB7AVAsZwOXNupblADOkpI6COMSeAWQQVg&noverify=0&group_code=747086715" target="_blank">点击链接加入群聊【EmpireCraft服务器】</a>
-            </div>
             <p>QQ群号：747086715</p>
             <p>需要赞助的加QQ：875752110</p>
         </div>
+        <div class="robot" id="robot"></div>
     </div>
+
+    <script>
+        const robot = document.getElementById('robot');
+        const joinQQGroup = document.getElementById('joinQQGroup');
+
+        robot.addEventListener('click', () => {
+            window.location.href = joinQQGroup.href; // 跳转到QQ群聊链接
+        });
+    </script>
 </body>
 </html>
