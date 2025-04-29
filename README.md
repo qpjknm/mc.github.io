@@ -99,7 +99,7 @@
         <h2>欢迎加入EmpireCraft服务器</h2>
         <p>这是一个公益免费的服务器，欢迎加入！</p>
         <p>作者：cn带土</p>
-        <a href="https://qm.qq.com/cgi-bin/qm/qr?k=XXXXXXX" class="button" id="joinQQGroup">点击加入QQ群聊</a>
+        <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=luXVF0M8gV4KUUMOf43U-SbXotM4Wuzr&authKey=%2Fqu0W5eiLQG%2FpPFGoLtWCwfnmDywEQFd7t9Cfx%2Bp4FLojKr6oRUUO8A%2F%2FUgtvkl%2F&noverify=0&group_code=747086715" class="button" id="joinQQGroup">点击加入QQ群聊</a>
         <div class="contact">
             <p>QQ群号：747086715</p>
             <p>需要赞助的加QQ：875752110</p>
