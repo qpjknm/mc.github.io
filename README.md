@@ -15,9 +15,6 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-image: url('background.jpg'); /* 背景图片 */
-            background-size: cover;
-            background-position: center;
         }
         .container {
             background-color: rgba(255, 255, 255, 0.9);
@@ -56,7 +53,7 @@
             position: relative;
             cursor: pointer;
             transition: transform 0.3s, background-color 0.3s;
-            animation: blink 2s infinite;
+            animation: float 3s infinite ease-in-out, blink 2s infinite;
         }
         .robot::before {
             content: '';
@@ -81,6 +78,14 @@
         .robot:hover {
             transform: translateY(-5px);
             background-color: #45a049;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
         }
         @keyframes blink {
             0%, 100% {
@@ -112,7 +117,7 @@
         const joinQQGroup = document.getElementById('joinQQGroup');
 
         robot.addEventListener('click', () => {
-            window.location.href = joinQQGroup.href; // 跳转到QQ群聊链接
+            window.open(joinQQGroup.href, '_blank'); // 在新标签页中打开链接
         });
     </script>
 </body>
