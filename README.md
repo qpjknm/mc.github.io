@@ -13,13 +13,3 @@
         </div>
         <div class="robot" id="robot"></div>
     </div>
-
-    <script>
-        const robot = document.getElementById('robot');
-        const joinQQGroup = document.getElementById('joinQQGroup');
-
-        robot.addEventListener('click', () => {
-            window.open(joinQQGroup.href, '_blank'); // 在新标签页中打开链接
-        });
-    </script>
-</body>
